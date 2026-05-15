@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#060810">
+    <title>AL BEZAM GROUP — First Dark Factory for biodegradable packaging in MENA</title>
+
+    <meta name="description"
+          content="AL BEZAM GROUP is building the Middle East's first fully automated Dark Factory for 100% biodegradable food packaging from sugarcane bagasse. KEZAD, Abu Dhabi.">
+    <meta name="keywords"
+          content="biodegradable packaging, bagasse, dark factory, KEZAD, Abu Dhabi, food-grade, FDA, PFAS-free, sustainable, AL BEZAM">
+    <meta name="author" content="AL BEZAM GROUP">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AL BEZAM GROUP — Dark Factory for biodegradable packaging">
+    <meta property="og:description"
+          content="The Middle East's first fully automated Dark Factory for 100% biodegradable food packaging from bagasse. KEZAD, Abu Dhabi.">
+    <meta property="og:url" content="https://albezam.ae">
+    <meta property="og:site_name" content="AL BEZAM GROUP">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AL BEZAM GROUP">
+    <meta name="twitter:description"
+          content="The Middle East's first fully automated Dark Factory for biodegradable packaging.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+
+    <style>
+        :root {
+            --navy: #060810;
+            --navy-light: #1F2E45;
+            --cyan: #00BFA5;
+            --cyan-soft: rgba(0, 191, 165, .14);
+            --white: #FFFFFF;
+            --text-grey: #6A7F96;
+            --max-width: 1100px;
+            --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+            --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            background: var(--navy);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.55;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image:
+                radial-gradient(800px circle at 75% 8%, rgba(0, 191, 165, .12), transparent 50%),
+                radial-gradient(900px circle at 5% 90%, rgba(31, 46, 69, .55), transparent 55%);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        header,
+        main,
+        footer {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        header {
+            padding-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        .brand-mark {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: var(--cyan);
+            color: var(--navy);
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 18px;
+            display: grid;
+            place-items: center;
+            letter-spacing: -.02em;
+        }
+
+        .brand-name {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 6px;
+            font-family: var(--font-body);
+            font-size: 13px;
+            color: var(--text-grey);
+        }
+
+        .lang-switch a {
+            color: var(--text-grey);
+            text-decoration: none;
+            padding: 6px 10px;
+            border-radius: 4px;
+            transition: color .15s, background .15s;
+        }
+
+        .lang-switch a.active,
+        .lang-switch a:hover {
+            color: var(--white);
+            background: var(--cyan-soft);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 64px;
+            padding-bottom: 64px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: var(--cyan-soft);
+            color: var(--cyan);
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-bottom: 24px;
+            width: max-content;
+        }
+
+        .badge .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--cyan);
+            box-shadow: 0 0 12px var(--cyan);
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: clamp(40px, 7vw, 84px);
+            line-height: 1.04;
+            letter-spacing: -.02em;
+            margin-bottom: 24px;
+        }
+
+        h1 .accent {
+            color: var(--cyan);
+        }
+
+        .lede {
+            font-size: clamp(18px, 2.2vw, 22px);
+            line-height: 1.5;
+            color: var(--text-grey);
+            max-width: 720px;
+            margin-bottom: 56px;
+        }
+
+        .lede strong {
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+
+        .card {
+            background: var(--navy-light);
+            border: 1px solid rgba(255, 255, 255, .06);
+            border-radius: 12px;
+            padding: 24px;
+            transition: border-color .2s, transform .2s;
+        }
+
+        .card:hover {
+            border-color: var(--cyan);
+            transform: translateY(-2px);
+        }
+
+        .card-label {
+            font-family: var(--font-display);
+            font-size: 11px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--cyan);
+            margin-bottom: 12px;
+        }
+
+        .card-value {
+            font-family: var(--font-display);
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .card-note {
+            font-size: 14px;
+            color: var(--text-grey);
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255, 255, 255, .08);
+        }
+
+        .contact-block .label {
+            font-size: 12px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--text-grey);
+            margin-bottom: 8px;
+        }
+
+        .contact-block a {
+            color: var(--white);
+            text-decoration: none;
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 17px;
+            border-bottom: 1px solid transparent;
+            transition: border-color .15s, color .15s;
+        }
+
+        .contact-block a:hover {
+            color: var(--cyan);
+            border-bottom-color: var(--cyan);
+        }
+
+        footer {
+            padding-bottom: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--text-grey);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        @media (max-width: 600px) {
+            header, main, footer {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            main {
+                padding-top: 40px;
+            }
+
+            .lede {
+                margin-bottom: 40px;
+            }
+
+            .grid {
+                gap: 16px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+
+        .ru, .en {
+            display: none;
+        }
+        .ru.active, .en.active {
+            display: revert;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <a class="brand" href="/" aria-label="AL BEZAM Home">
+        <span class="brand-mark">AB</span>
+        <span class="brand-name">AL BEZAM</span>
+    </a>
+    <nav class="lang-switch" aria-label="Language selection">
+        <a href="#" data-lang="en" class="active">EN</a>
+        <a href="#" data-lang="ru">RU</a>
+    </nav>
+</header>
+
+<main>
+    <span class="badge"><span class="dot"></span> <span class="en active">In construction</span><span class="ru">Под строительством</span></span>
+
+    <h1>
+        <span class="en active">The Middle East's first <span class="accent">Dark Factory</span><br>for biodegradable packaging.</span>
+        <span class="ru">Первый на Ближнем Востоке <span class="accent">Dark Factory</span><br>для биоразлагаемой упаковки.</span>
+    </h1>
+
+    <p class="lede">
+        <span class="en active">AL BEZAM GROUP is building a fully automated production facility in <strong>KEZAD, Abu Dhabi</strong> for 100% biodegradable food packaging made from sugarcane bagasse. Closed water loop, zero-PFAS coating, blockchain traceability.</span>
+        <span class="ru">AL BEZAM GROUP строит полностью автоматизированный завод в <strong>KEZAD, Абу-Даби</strong> для производства 100% биоразлагаемой пищевой упаковки из багассы. Замкнутый цикл воды, покрытие без PFAS, блокчейн-трассировка.</span>
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <div class="card-label"><span class="en active">Location</span><span class="ru">Локация</span></div>
+            <div class="card-value">KEZAD</div>
+            <div class="card-note"><span class="en active">Abu Dhabi, UAE</span><span class="ru">Абу-Даби, ОАЭ</span></div>
+        </div>
+        <div class="card">
+            <div class="card-label"><span class="en active">Production</span><span class="ru">Производство</span></div>
+            <div class="card-value">30+ SKU</div>
+            <div class="card-note"><span class="en active">Cups, bowls, boxes, lids — food-grade FDA / EU compliant</span><span class="ru">Стаканы, миски, боксы, крышки — FDA / EU food-grade</span></div>
+        </div>
+        <div class="card">
+            <div class="card-label"><span class="en active">Capacity</span><span class="ru">Мощность</span></div>
+            <div class="card-value">440M / yr</div>
+            <div class="card-note"><span class="en active">Units per year — 11 production lines</span><span class="ru">Единиц в год — 11 производственных линий</span></div>
+        </div>
+        <div class="card">
+            <div class="card-label"><span class="en active">Funding stage</span><span class="ru">Стадия</span></div>
+            <div class="card-value">Series A</div>
+            <div class="card-note"><span class="en active">Road-show in progress</span><span class="ru">Road-show в процессе</span></div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-block">
+            <div class="label"><span class="en active">Investor relations</span><span class="ru">Инвесторам</span></div>
+            <a href="mailto:is@albezam.ae">is@albezam.ae</a>
+        </div>
+        <div class="contact-block">
+            <div class="label"><span class="en active">General inquiries</span><span class="ru">Общие вопросы</span></div>
+            <a href="mailto:info@albezam.ae">info@albezam.ae</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <span>© <span id="year"></span> AL BEZAM GROUP</span>
+    <span><span class="en active">Al Bezam Holding LLC · Al Bezam Labs LLC (ADGM) · Al Bezam Industrial LLC</span><span class="ru">Al Bezam Holding LLC · Al Bezam Labs LLC (ADGM) · Al Bezam Industrial LLC</span></span>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const langLinks = document.querySelectorAll('.lang-switch a');
+    langLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const lang = link.getAttribute('data-lang');
+            document.documentElement.lang = lang;
+            langLinks.forEach(l => l.classList.toggle('active', l === link));
+            document.querySelectorAll('.en, .ru').forEach(el => {
+                el.classList.toggle('active', el.classList.contains(lang));
+            });
+            try { localStorage.setItem('albezam_lang', lang); } catch (_) {}
+        });
+    });
+
+    try {
+        const saved = localStorage.getItem('albezam_lang');
+        if (saved && saved !== 'en') {
+            document.querySelector(`.lang-switch a[data-lang="${saved}"]`)?.click();
+        }
+    } catch (_) {}
+</script>
+</body>
+</html>
